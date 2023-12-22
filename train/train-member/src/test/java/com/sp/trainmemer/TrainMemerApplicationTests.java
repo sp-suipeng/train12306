@@ -1,10 +1,10 @@
-package com.sp.train;
+package com.sp.trainmemer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TrainApplicationTests {
+class TrainMemerApplicationTests {
 
     @Test
     void contextLoads() {

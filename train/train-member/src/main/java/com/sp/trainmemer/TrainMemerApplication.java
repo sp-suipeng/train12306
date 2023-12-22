@@ -1,13 +1,13 @@
-package com.sp.train;
+package com.sp.trainmemer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TrainApplication {
+public class TrainMemerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TrainApplication.class, args);
+        SpringApplication.run(TrainMemerApplication.class, args);
     }
 
 }
