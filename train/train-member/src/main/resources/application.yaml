@@ -16,4 +16,4 @@ spring:
 # 降低mapper的日志级别,可以用来显示sql日志
 logging:
   level:
-    com.sp.trainmemer.mapper: trace
+    com.sp.trainmember.mapper: trace

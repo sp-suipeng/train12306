@@ -1,6 +1,6 @@
-package com.sp.trainmemer.service;
+package com.sp.trainmember.service;
 
-import com.sp.trainmemer.mapper.MemberMapper;
+import com.sp.trainmember.mapper.MemberMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

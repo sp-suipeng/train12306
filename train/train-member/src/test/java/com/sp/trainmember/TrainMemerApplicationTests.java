@@ -1,4 +1,4 @@
-package com.sp.trainmemer;
+package com.sp.trainmember;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

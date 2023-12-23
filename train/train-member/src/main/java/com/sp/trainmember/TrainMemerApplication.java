@@ -1,4 +1,4 @@
-package com.sp.trainmemer;
+package com.sp.trainmember;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
