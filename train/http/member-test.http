@@ -1,1 +1,2 @@
+#测试接口
 GET http://localhost:8081/member/test/hello
