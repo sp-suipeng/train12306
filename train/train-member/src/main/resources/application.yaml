@@ -12,3 +12,8 @@ spring:
     url: jdbc:mysql://124.220.36.202:3306/train-member?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
     username: train-member
     password: train-member
+
+# 降低mapper的日志级别,可以用来显示sql日志
+logging:
+  level:
+    com.sp.trainmemer.mapper: trace
