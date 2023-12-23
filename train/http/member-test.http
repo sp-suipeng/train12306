@@ -1,2 +1,8 @@
+# 获取数据库总条数
+GET http://localhost:8081/member/count
+
+
+###
 #测试接口
 GET http://localhost:8081/member/test/hello
+

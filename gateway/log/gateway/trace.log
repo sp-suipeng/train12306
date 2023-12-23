@@ -1,0 +1,17 @@
+2023-12-23 14:54:55.269 INFO  com.sp.gateway.GatewayApplication                 :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2023-12-23 14:54:55.766 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=752ec036-b739-3738-afbc-9e338ee29110
+2023-12-23 14:54:57.189 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-12-23 14:54:57.189 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-12-23 14:54:57.190 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-12-23 14:54:57.190 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-12-23 14:54:57.191 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-12-23 14:54:57.191 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-12-23 14:54:57.191 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-12-23 14:54:57.192 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-12-23 14:54:57.192 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-12-23 14:54:57.192 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2023-12-23 14:54:57.192 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-12-23 14:54:57.192 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-12-23 14:54:57.193 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-12-23 14:54:58.721 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :89   [32m                  [0;39m Netty started on port(s): 8080
+2023-12-23 14:54:59.554 INFO  com.sp.gateway.GatewayApplication                 :61   [32m                  [0;39m Started GatewayApplication in 6.636 seconds (JVM running for 15.722)

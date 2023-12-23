@@ -2,3 +2,13 @@ server:
   port: 8081
   servlet:
     context-path: /member
+#mybatis配置
+mybatis:
+  mapper-locations: classpath:/mapper/**/*.xml
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://124.220.36.202:3306/train-member?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
+    username: train-member
+    password: train-member
