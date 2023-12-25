@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.sp.trainmemer.mapper")
+@MapperScan("com.sp.trainmember.mapper")
 public class TrainMemerApplication {
 
     public static void main(String[] args) {
