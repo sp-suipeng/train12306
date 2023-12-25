@@ -402,3 +402,1300 @@ java.lang.RuntimeException: 用户已注册
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-25 19:28:21.054 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2023-12-25 19:28:21.074 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:28:21.074 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:28:21.075 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-12-25 19:28:21.078 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
+2023-12-25 19:28:21.078 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:28:21.080 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:28:21.083 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2023-12-25 19:28:21.089 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2023-12-25 19:28:21.521 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93468 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:28:21.521 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:28:21.864 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=d68c24c9-8f30-3cbc-b360-f942e0e2dff2
+2023-12-25 19:28:21.937 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:28:21.938 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:28:21.938 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:28:21.939 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:28:21.967 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:28:21.967 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 443 ms
+2023-12-25 19:28:22.120 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:28:22.316 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:28:22.321 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:28:22.516 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.331 seconds (process running for 1174.332)
+2023-12-25 19:28:22.517 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:28:23.582 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2023-12-25 19:28:23.595 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:28:23.596 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:28:23.598 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:28:23.600 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:28:23.882 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93468 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:28:23.882 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:28:24.134 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=d68c24c9-8f30-3cbc-b360-f942e0e2dff2
+2023-12-25 19:28:24.183 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:28:24.184 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:28:24.185 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:28:24.186 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:28:24.208 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:28:24.208 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 323 ms
+2023-12-25 19:28:24.348 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:28:24.538 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:28:24.542 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:28:24.724 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.06 seconds (process running for 1176.54)
+2023-12-25 19:28:24.725 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:29:43.873 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-12-25 19:29:43.887 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:29:43.888 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:29:43.890 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:29:43.892 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:29:44.425 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93468 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:29:44.427 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:29:46.407 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=d68c24c9-8f30-3cbc-b360-f942e0e2dff2
+2023-12-25 19:29:46.566 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:29:46.567 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:29:46.568 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:29:46.568 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:29:46.610 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:29:46.611 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2179 ms
+2023-12-25 19:29:46.827 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:29:47.044 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:29:47.052 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:29:47.248 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 3.251 seconds (process running for 1259.065)
+2023-12-25 19:29:47.249 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:31:12.580 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 3 class path changes (0 additions, 3 deletions, 0 modifications)
+2023-12-25 19:31:12.604 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:31:12.605 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:31:12.608 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:31:12.610 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:31:13.108 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93468 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:31:13.109 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:31:13.488 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=d68c24c9-8f30-3cbc-b360-f942e0e2dff2
+2023-12-25 19:31:13.545 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:31:13.546 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:31:13.546 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:31:13.546 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:31:13.569 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:31:13.569 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 455 ms
+2023-12-25 19:31:13.750 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:31:13.996 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:31:14.001 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:31:14.194 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.482 seconds (process running for 1346.01)
+2023-12-25 19:31:14.196 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:31:15.217 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
+2023-12-25 19:31:15.237 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:31:15.237 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:31:15.240 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:31:15.242 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:31:15.997 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93468 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:31:15.998 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:31:16.587 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=d68c24c9-8f30-3cbc-b360-f942e0e2dff2
+2023-12-25 19:31:16.721 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:31:16.723 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:31:16.723 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:31:16.724 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:31:16.771 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:31:16.773 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 765 ms
+2023-12-25 19:31:17.101 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:31:17.356 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:31:17.361 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:31:17.577 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 2.221 seconds (process running for 1349.393)
+2023-12-25 19:31:17.578 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:31:58.671 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/member]        :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-25 19:31:58.671 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-12-25 19:31:58.673 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-12-25 19:31:58.681 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
+2023-12-25 19:32:00.534 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@558f7d9e
+2023-12-25 19:32:00.534 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
+2023-12-25 19:32:00.535 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-12-25 19:32:00.535 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==> Parameters: 123(String)
+2023-12-25 19:32:00.780 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m                  [0;39m <==    Columns: id, mobile
+2023-12-25 19:32:00.781 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m                  [0;39m <==        Row: 1703502865843, 123
+2023-12-25 19:32:00.781 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m <==      Total: 1
+2023-12-25 19:32:00.782 ERROR o.a.c.c.C.[.[.[/member].[dispatcherServlet]       :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/member] threw exception [Request processing failed: java.lang.RuntimeException: 用户已注册] with root cause
+java.lang.RuntimeException: 用户已注册
+	at com.sp.trainmember.service.MemberService.register(MemberService.java:35)
+	at com.sp.trainmember.controller.MemberController.register(MemberController.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-25 19:32:05.536 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-12-25 19:32:05.537 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==> Parameters: 1234(String)
+2023-12-25 19:32:05.554 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m <==      Total: 0
+2023-12-25 19:32:05.555 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m ==>  Preparing: insert into member (id, mobile) values (?, ?)
+2023-12-25 19:32:05.556 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m ==> Parameters: 1703503925554(Long), 1234(String)
+2023-12-25 19:32:05.598 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m <==    Updates: 1
+2023-12-25 19:32:10.127 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-12-25 19:32:10.128 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==> Parameters: 1234(String)
+2023-12-25 19:32:10.144 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m                  [0;39m <==    Columns: id, mobile
+2023-12-25 19:32:10.145 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m                  [0;39m <==        Row: 1703503925554, 1234
+2023-12-25 19:32:10.145 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m <==      Total: 1
+2023-12-25 19:32:10.147 ERROR o.a.c.c.C.[.[.[/member].[dispatcherServlet]       :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/member] threw exception [Request processing failed: java.lang.RuntimeException: 用户已注册] with root cause
+java.lang.RuntimeException: 用户已注册
+	at com.sp.trainmember.service.MemberService.register(MemberService.java:35)
+	at com.sp.trainmember.controller.MemberController.register(MemberController.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-25 19:32:15.052 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-12-25 19:32:15.053 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==> Parameters: 12345(String)
+2023-12-25 19:32:15.071 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m <==      Total: 0
+2023-12-25 19:32:15.072 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m ==>  Preparing: insert into member (id, mobile) values (?, ?)
+2023-12-25 19:32:15.073 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m ==> Parameters: 1703503935072(Long), 12345(String)
+2023-12-25 19:32:15.109 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m <==    Updates: 1
+2023-12-25 19:32:32.624 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-12-25 19:32:32.625 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==> Parameters: 123456(String)
+2023-12-25 19:32:32.641 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m <==      Total: 0
+2023-12-25 19:32:32.641 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m ==>  Preparing: insert into member (id, mobile) values (?, ?)
+2023-12-25 19:32:32.642 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m ==> Parameters: 1703503952641(Long), 123456(String)
+2023-12-25 19:32:32.677 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m <==    Updates: 1
+2023-12-25 19:35:09.014 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
+2023-12-25 19:35:09.041 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
+2023-12-25 19:35:22.664 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:35:22.668 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:35:22.763 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-25 19:35:22.764 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-25 19:35:23.976 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=d68c24c9-8f30-3cbc-b360-f942e0e2dff2
+2023-12-25 19:35:24.789 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:35:24.803 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:35:24.804 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:35:24.805 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:35:24.901 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:35:24.903 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2137 ms
+2023-12-25 19:35:25.791 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:35:26.046 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:35:26.080 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:35:26.272 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 4.982 seconds (process running for 14.075)
+2023-12-25 19:35:46.248 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-25 19:35:46.249 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-12-25 19:35:46.251 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 2 ms
+2023-12-25 19:35:46.398 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-12-25 19:35:47.303 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64950dcc
+2023-12-25 19:35:47.306 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-12-25 19:35:47.314 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-12-25 19:35:47.346 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==> Parameters: 1234567(String)
+2023-12-25 19:35:47.379 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m <==      Total: 0
+2023-12-25 19:35:47.387 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m ==>  Preparing: insert into member (id, mobile) values (?, ?)
+2023-12-25 19:35:47.388 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m ==> Parameters: 1703504147387(Long), 1234567(String)
+2023-12-25 19:35:47.419 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m <==    Updates: 1
+2023-12-25 19:37:38.938 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-12-25 19:37:38.958 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:37:38.959 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:37:38.961 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-12-25 19:37:38.965 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
+2023-12-25 19:37:38.967 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:37:38.970 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:37:38.974 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-12-25 19:37:38.983 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-12-25 19:37:39.359 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:37:39.359 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:37:39.807 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 19:37:40.651 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:37:40.652 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:37:40.652 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:37:40.653 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:37:40.682 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:37:40.683 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1319 ms
+2023-12-25 19:37:41.358 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:37:41.598 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:37:41.603 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:37:41.806 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 2.765 seconds (process running for 149.61)
+2023-12-25 19:37:41.808 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:37:50.993 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-25 19:37:50.993 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-12-25 19:37:50.995 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-12-25 19:37:51.005 INFO  com.sp.trainmember.aspect.LogAspect               :48   [32m                  [0;39m ------------- 开始 -------------
+2023-12-25 19:37:51.007 INFO  com.sp.trainmember.aspect.LogAspect               :49   [32m                  [0;39m 请求地址: http://localhost:8081/member/register POST
+2023-12-25 19:37:51.008 INFO  com.sp.trainmember.aspect.LogAspect               :50   [32m                  [0;39m 类名方法: com.sp.trainmember.controller.MemberController.register
+2023-12-25 19:37:51.009 INFO  com.sp.trainmember.aspect.LogAspect               :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-12-25 19:37:51.112 INFO  com.sp.trainmember.aspect.LogAspect               :72   [32m                  [0;39m 请求参数: [{"mobile":"1234567"}]
+2023-12-25 19:37:51.117 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2023-12-25 19:37:52.067 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54155809
+2023-12-25 19:37:52.067 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2023-12-25 19:37:52.068 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-12-25 19:37:52.068 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==> Parameters: 1234567(String)
+2023-12-25 19:37:52.083 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m                  [0;39m <==    Columns: id, mobile
+2023-12-25 19:37:52.084 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m                  [0;39m <==        Row: 1703504147387, 1234567
+2023-12-25 19:37:52.087 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m <==      Total: 1
+2023-12-25 19:37:52.089 ERROR o.a.c.c.C.[.[.[/member].[dispatcherServlet]       :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/member] threw exception [Request processing failed: java.lang.RuntimeException: 用户已注册] with root cause
+java.lang.RuntimeException: 用户已注册
+	at com.sp.trainmember.service.MemberService.register(MemberService.java:35)
+	at com.sp.trainmember.controller.MemberController.register(MemberController.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.sp.trainmember.aspect.LogAspect.doAround(LogAspect.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.sp.trainmember.controller.MemberController$$SpringCGLIB$$0.register(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-25 19:38:28.799 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-12-25 19:38:28.821 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:38:28.821 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:38:28.822 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-12-25 19:38:28.825 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
+2023-12-25 19:38:28.825 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:38:28.827 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:38:28.830 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2023-12-25 19:38:28.838 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2023-12-25 19:38:29.195 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:38:29.196 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:38:29.432 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 19:38:29.538 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:38:29.539 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:38:29.539 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:38:29.539 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:38:29.562 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:38:29.563 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 365 ms
+2023-12-25 19:38:30.091 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:38:30.379 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:38:30.386 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:38:30.585 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.671 seconds (process running for 198.39)
+2023-12-25 19:38:30.587 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:38:31.544 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-12-25 19:38:31.558 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:38:31.558 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:38:31.560 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:38:31.562 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:38:31.880 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:38:31.881 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:38:32.170 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 19:38:32.309 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:38:32.310 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:38:32.310 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:38:32.310 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:38:32.344 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:38:32.344 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 460 ms
+2023-12-25 19:38:32.794 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:38:33.012 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:38:33.017 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:38:33.186 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.547 seconds (process running for 200.99)
+2023-12-25 19:38:33.188 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:38:35.395 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-25 19:38:35.396 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-12-25 19:38:35.397 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-12-25 19:38:35.399 INFO  com.sp.trainmember.aspect.LogAspect               :48   [32m                  [0;39m ------------- 开始 -------------
+2023-12-25 19:38:35.400 INFO  com.sp.trainmember.aspect.LogAspect               :49   [32m                  [0;39m 请求地址: http://localhost:8081/member/register POST
+2023-12-25 19:38:35.400 INFO  com.sp.trainmember.aspect.LogAspect               :50   [32m                  [0;39m 类名方法: com.sp.trainmember.controller.MemberController.register
+2023-12-25 19:38:35.401 INFO  com.sp.trainmember.aspect.LogAspect               :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-12-25 19:38:35.403 INFO  com.sp.trainmember.aspect.LogAspect               :72   [32m                  [0;39m 请求参数: [{}]
+2023-12-25 19:38:35.407 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
+2023-12-25 19:38:36.059 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@115b74a2
+2023-12-25 19:38:36.060 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
+2023-12-25 19:38:36.061 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-12-25 19:38:36.061 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==> Parameters: 12345678(String)
+2023-12-25 19:38:36.080 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m <==      Total: 0
+2023-12-25 19:38:36.082 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m ==>  Preparing: insert into member (id, mobile) values (?, ?)
+2023-12-25 19:38:36.083 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m ==> Parameters: 1703504316081(Long), 12345678(String)
+2023-12-25 19:38:36.333 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m <==    Updates: 1
+2023-12-25 19:38:36.333 INFO  com.sp.trainmember.aspect.LogAspect               :84   [32m                  [0;39m 返回结果: 1703504316081
+2023-12-25 19:38:36.334 INFO  com.sp.trainmember.aspect.LogAspect               :85   [32m                  [0;39m ------------- 结束 耗时：935 ms -------------
+2023-12-25 19:44:36.157 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-12-25 19:44:36.174 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:44:36.174 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:44:36.175 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-12-25 19:44:36.177 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-3 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
+2023-12-25 19:44:36.177 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:44:36.179 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:44:36.180 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
+2023-12-25 19:44:36.184 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
+2023-12-25 19:44:36.491 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:44:36.491 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:44:36.763 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 19:44:36.865 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:44:36.865 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:44:36.866 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:44:36.866 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:44:36.891 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:44:36.891 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 396 ms
+2023-12-25 19:44:37.286 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:44:37.483 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:44:37.488 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:44:37.655 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.413 seconds (process running for 565.459)
+2023-12-25 19:44:37.656 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:45:07.870 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-12-25 19:45:07.888 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:45:07.889 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:45:07.891 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:45:07.893 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:45:08.271 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:45:08.271 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:45:08.528 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 19:45:08.622 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:45:08.623 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:45:08.623 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:45:08.623 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:45:08.644 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:45:08.644 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 369 ms
+2023-12-25 19:45:09.061 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:45:09.298 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:45:09.304 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:45:09.571 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.614 seconds (process running for 597.376)
+2023-12-25 19:45:09.574 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:45:10.536 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-12-25 19:45:10.549 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:45:10.550 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:45:10.552 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:45:10.553 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:45:10.842 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:45:10.842 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:45:11.093 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 19:45:11.199 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:45:11.200 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:45:11.200 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:45:11.200 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:45:11.222 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:45:11.223 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 378 ms
+2023-12-25 19:45:11.633 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:45:11.833 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:45:11.837 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:45:12.014 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.402 seconds (process running for 599.818)
+2023-12-25 19:45:12.015 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:46:10.466 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-12-25 19:46:10.490 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:46:10.491 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:46:10.495 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:46:10.497 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:46:10.901 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:46:10.901 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:46:11.241 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 19:46:11.347 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:46:11.347 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:46:11.348 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:46:11.348 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:46:11.368 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:46:11.368 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 462 ms
+2023-12-25 19:46:11.928 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:46:12.287 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:46:12.292 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:46:12.488 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.93 seconds (process running for 660.292)
+2023-12-25 19:46:12.490 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:46:13.385 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-12-25 19:46:13.413 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:46:13.414 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:46:13.415 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:46:13.417 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:46:13.879 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:46:13.879 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:46:14.496 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 19:46:14.670 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:46:14.671 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:46:14.672 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:46:14.672 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:46:14.717 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:46:14.717 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 833 ms
+2023-12-25 19:46:15.426 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:46:15.705 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:46:15.712 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:46:15.932 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 2.454 seconds (process running for 663.737)
+2023-12-25 19:46:15.934 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:46:34.080 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-12-25 19:46:34.095 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:46:34.096 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:46:34.098 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:46:34.099 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:46:34.368 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:46:34.368 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:46:34.605 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 19:46:34.709 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:46:34.710 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:46:34.710 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:46:34.710 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:46:34.732 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:46:34.733 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 362 ms
+2023-12-25 19:46:35.114 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:46:35.306 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:46:35.311 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:46:35.503 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.352 seconds (process running for 683.307)
+2023-12-25 19:46:35.505 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:47:03.709 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-12-25 19:47:03.732 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:47:03.733 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:47:03.735 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:47:03.742 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:47:04.131 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:47:04.132 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:47:04.430 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 19:47:04.559 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:47:04.559 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:47:04.560 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:47:04.560 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:47:04.586 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:47:04.586 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 451 ms
+2023-12-25 19:47:05.001 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:47:05.204 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:47:05.209 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:47:05.393 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.579 seconds (process running for 713.197)
+2023-12-25 19:47:05.394 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:47:06.456 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-12-25 19:47:06.472 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:47:06.472 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:47:06.474 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:47:06.476 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:47:06.764 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:47:06.764 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:47:07.010 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 19:47:07.111 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:47:07.112 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:47:07.112 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:47:07.112 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:47:07.142 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:47:07.142 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 375 ms
+2023-12-25 19:47:07.530 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:47:07.730 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:47:07.734 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:47:07.906 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.373 seconds (process running for 715.71)
+2023-12-25 19:47:07.907 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:50:05.438 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-12-25 19:50:05.455 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:50:05.455 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:50:05.458 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:50:05.459 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:50:05.777 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:50:05.777 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:50:06.064 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 19:50:06.170 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:50:06.171 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:50:06.171 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:50:06.171 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:50:06.201 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:50:06.202 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 422 ms
+2023-12-25 19:50:06.586 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:50:06.791 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:50:06.796 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:50:06.980 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.453 seconds (process running for 894.783)
+2023-12-25 19:50:06.981 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:50:08.096 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-12-25 19:50:08.113 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:50:08.114 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 19:50:08.116 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:50:08.118 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:50:08.471 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 19:50:08.471 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 19:50:08.819 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 19:50:08.943 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 19:50:08.943 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:50:08.944 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 19:50:08.944 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 19:50:08.968 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 19:50:08.968 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 494 ms
+2023-12-25 19:50:09.443 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 19:50:09.673 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 19:50:09.678 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 19:50:09.876 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.694 seconds (process running for 897.68)
+2023-12-25 19:50:09.877 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 19:52:58.052 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-25 19:52:58.053 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-12-25 19:52:58.054 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-12-25 19:52:58.059 INFO  com.sp.trainmember.aspect.LogAspect               :48   [32m                  [0;39m ------------- 开始 -------------
+2023-12-25 19:52:58.060 INFO  com.sp.trainmember.aspect.LogAspect               :49   [32m                  [0;39m 请求地址: http://localhost:8081/member/register POST
+2023-12-25 19:52:58.060 INFO  com.sp.trainmember.aspect.LogAspect               :50   [32m                  [0;39m 类名方法: com.sp.trainmember.controller.MemberController.register
+2023-12-25 19:52:58.061 INFO  com.sp.trainmember.aspect.LogAspect               :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-12-25 19:52:58.063 INFO  com.sp.trainmember.aspect.LogAspect               :72   [32m                  [0;39m 请求参数: [{}]
+2023-12-25 19:52:58.068 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-4 - Starting...
+2023-12-25 19:53:00.003 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6aa4022b
+2023-12-25 19:53:00.004 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-4 - Start completed.
+2023-12-25 19:53:00.005 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-12-25 19:53:00.006 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==> Parameters: 123456789(String)
+2023-12-25 19:53:00.027 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m <==      Total: 0
+2023-12-25 19:53:00.028 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m ==>  Preparing: insert into member (id, mobile) values (?, ?)
+2023-12-25 19:53:00.029 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m ==> Parameters: 1703505180028(Long), 123456789(String)
+2023-12-25 19:53:00.061 DEBUG com.sp.trainmember.mapper.MemberMapper.insert     :137  [32m                  [0;39m <==    Updates: 1
+2023-12-25 19:53:00.064 INFO  com.sp.trainmember.aspect.LogAspect               :84   [32m                  [0;39m 返回结果: {"content":1703505180028,"success":true}
+2023-12-25 19:53:00.064 INFO  com.sp.trainmember.aspect.LogAspect               :85   [32m                  [0;39m ------------- 结束 耗时：2006 ms -------------
+2023-12-25 20:00:20.964 INFO  com.sp.trainmember.aspect.LogAspect               :48   [32m                  [0;39m ------------- 开始 -------------
+2023-12-25 20:00:20.965 INFO  com.sp.trainmember.aspect.LogAspect               :49   [32m                  [0;39m 请求地址: http://localhost:8081/member/register POST
+2023-12-25 20:00:20.965 INFO  com.sp.trainmember.aspect.LogAspect               :50   [32m                  [0;39m 类名方法: com.sp.trainmember.controller.MemberController.register
+2023-12-25 20:00:20.965 INFO  com.sp.trainmember.aspect.LogAspect               :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-12-25 20:00:20.965 INFO  com.sp.trainmember.aspect.LogAspect               :72   [32m                  [0;39m 请求参数: [{}]
+2023-12-25 20:00:20.980 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-12-25 20:00:20.981 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==> Parameters: 123456789(String)
+2023-12-25 20:00:20.995 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m                  [0;39m <==    Columns: id, mobile
+2023-12-25 20:00:20.995 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m                  [0;39m <==        Row: 1703505180028, 123456789
+2023-12-25 20:00:20.995 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m <==      Total: 1
+2023-12-25 20:00:20.996 ERROR o.a.c.c.C.[.[.[/member].[dispatcherServlet]       :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/member] threw exception [Request processing failed: java.lang.RuntimeException: 用户已注册] with root cause
+java.lang.RuntimeException: 用户已注册
+	at com.sp.trainmember.service.MemberService.register(MemberService.java:35)
+	at com.sp.trainmember.controller.MemberController.register(MemberController.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.sp.trainmember.aspect.LogAspect.doAround(LogAspect.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.sp.trainmember.controller.MemberController$$SpringCGLIB$$0.register(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-25 20:02:48.894 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-12-25 20:02:48.906 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:02:48.906 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 20:02:48.906 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-12-25 20:02:48.909 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-4 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
+2023-12-25 20:02:48.909 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:02:48.910 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:02:48.911 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-4 - Shutdown initiated...
+2023-12-25 20:02:48.915 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-4 - Shutdown completed.
+2023-12-25 20:02:49.260 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 20:02:49.260 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 20:02:49.607 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 20:02:49.790 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 20:02:49.790 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:02:49.791 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 20:02:49.791 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 20:02:49.828 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 20:02:49.828 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 564 ms
+2023-12-25 20:02:50.478 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 20:02:50.789 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:02:50.793 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 20:02:51.038 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 2.056 seconds (process running for 1658.842)
+2023-12-25 20:02:51.039 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 20:03:04.572 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-12-25 20:03:04.591 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:03:04.592 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 20:03:04.594 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:03:04.596 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:03:04.906 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 20:03:04.906 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 20:03:05.179 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 20:03:05.349 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 20:03:05.350 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:03:05.350 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 20:03:05.350 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 20:03:05.378 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 20:03:05.379 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 471 ms
+2023-12-25 20:03:05.832 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 20:03:06.047 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:03:06.052 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 20:03:06.234 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.563 seconds (process running for 1674.038)
+2023-12-25 20:03:06.236 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 20:03:07.289 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-12-25 20:03:07.318 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:03:07.319 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 20:03:07.320 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:03:07.322 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:03:07.614 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 20:03:07.614 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 20:03:07.851 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 20:03:07.946 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 20:03:07.946 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:03:07.946 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 20:03:07.947 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 20:03:07.974 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 20:03:07.974 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 358 ms
+2023-12-25 20:03:08.339 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 20:03:08.544 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:03:08.549 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 20:03:08.738 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.354 seconds (process running for 1676.542)
+2023-12-25 20:03:08.739 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 20:06:59.237 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-12-25 20:06:59.258 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:06:59.258 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 20:06:59.261 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:06:59.262 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:06:59.658 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 20:06:59.660 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 20:07:00.104 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 20:07:00.297 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 20:07:00.297 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:07:00.298 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 20:07:00.298 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 20:07:00.329 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 20:07:00.329 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 664 ms
+2023-12-25 20:07:00.964 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 20:07:01.189 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:07:01.193 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 20:07:01.356 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 2.019 seconds (process running for 1909.16)
+2023-12-25 20:07:01.358 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 20:08:14.143 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-12-25 20:08:14.162 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:08:14.163 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 20:08:14.165 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:08:14.167 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:08:14.543 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 20:08:14.543 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 20:08:14.790 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 20:08:14.889 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 20:08:14.889 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:08:14.890 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 20:08:14.890 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 20:08:14.912 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 20:08:14.912 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 365 ms
+2023-12-25 20:08:15.293 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 20:08:15.496 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:08:15.499 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 20:08:15.690 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.456 seconds (process running for 1983.494)
+2023-12-25 20:08:15.691 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 20:10:18.578 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-12-25 20:10:18.596 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:10:18.597 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 20:10:18.599 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:10:18.601 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:10:19.000 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 20:10:19.000 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 20:10:19.304 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 20:10:19.452 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 20:10:19.453 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:10:19.453 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 20:10:19.453 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 20:10:19.479 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 20:10:19.479 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 477 ms
+2023-12-25 20:10:19.957 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 20:10:20.198 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:10:20.202 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 20:10:20.375 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.701 seconds (process running for 2108.179)
+2023-12-25 20:10:20.377 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 20:10:21.411 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-12-25 20:10:21.425 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:10:21.425 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 20:10:21.427 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:10:21.428 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:10:21.702 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 20:10:21.702 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 20:10:21.984 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 20:10:22.084 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 20:10:22.084 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:10:22.084 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 20:10:22.084 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 20:10:22.107 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 20:10:22.107 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 402 ms
+2023-12-25 20:10:22.476 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 20:10:22.678 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:10:22.682 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 20:10:22.860 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.378 seconds (process running for 2110.663)
+2023-12-25 20:10:22.861 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 20:10:39.983 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-12-25 20:10:39.999 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:10:39.999 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 20:10:40.001 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:10:40.003 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:10:40.296 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 93772 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 20:10:40.297 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 20:10:40.562 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 20:10:40.662 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 20:10:40.662 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:10:40.663 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 20:10:40.663 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 20:10:40.684 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 20:10:40.684 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 385 ms
+2023-12-25 20:10:41.056 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 20:10:41.250 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:10:41.253 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 20:10:41.426 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.363 seconds (process running for 2129.23)
+2023-12-25 20:10:41.428 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 20:11:41.159 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-25 20:11:41.160 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-12-25 20:11:41.161 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-12-25 20:11:41.163 INFO  com.sp.trainmember.aspect.LogAspect               :48   [32m                  [0;39m ------------- 开始 -------------
+2023-12-25 20:11:41.163 INFO  com.sp.trainmember.aspect.LogAspect               :49   [32m                  [0;39m 请求地址: http://localhost:8081/member/register POST
+2023-12-25 20:11:41.163 INFO  com.sp.trainmember.aspect.LogAspect               :50   [32m                  [0;39m 类名方法: com.sp.trainmember.controller.MemberController.register
+2023-12-25 20:11:41.163 INFO  com.sp.trainmember.aspect.LogAspect               :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-12-25 20:11:41.164 INFO  com.sp.trainmember.aspect.LogAspect               :72   [32m                  [0;39m 请求参数: [{}]
+2023-12-25 20:11:41.167 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-5 - Starting...
+2023-12-25 20:11:41.388 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@117344f1
+2023-12-25 20:11:41.389 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-5 - Start completed.
+2023-12-25 20:11:41.389 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-12-25 20:11:41.390 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==> Parameters: 123456789(String)
+2023-12-25 20:11:41.404 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m                  [0;39m <==    Columns: id, mobile
+2023-12-25 20:11:41.404 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m                  [0;39m <==        Row: 1703505180028, 123456789
+2023-12-25 20:11:41.404 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m <==      Total: 1
+2023-12-25 20:11:41.405 ERROR o.a.c.c.C.[.[.[/member].[dispatcherServlet]       :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/member] threw exception [Request processing failed: java.lang.RuntimeException: 用户已注册] with root cause
+java.lang.RuntimeException: 用户已注册
+	at com.sp.trainmember.service.MemberService.register(MemberService.java:35)
+	at com.sp.trainmember.controller.MemberController.register(MemberController.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.sp.trainmember.aspect.LogAspect.doAround(LogAspect.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.sp.trainmember.controller.MemberController$$SpringCGLIB$$0.register(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-25 20:11:45.557 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-5 - Shutdown initiated...
+2023-12-25 20:11:45.562 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-5 - Shutdown completed.
+2023-12-25 20:11:58.056 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 95196 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 20:11:58.061 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 20:11:58.135 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-25 20:11:58.135 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-25 20:11:59.374 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=9045cddf-2acf-3e56-9c8c-9c25ad9571d3
+2023-12-25 20:12:00.476 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 20:12:00.492 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:12:00.495 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 20:12:00.496 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 20:12:00.597 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 20:12:00.599 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2461 ms
+2023-12-25 20:12:01.865 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 20:12:02.133 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:12:02.163 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 20:12:02.343 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 5.642 seconds (process running for 14.812)
+2023-12-25 20:12:10.370 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-25 20:12:10.370 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-12-25 20:12:10.372 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-12-25 20:12:10.425 INFO  com.sp.trainmember.aspect.LogAspect               :48   [32m                  [0;39m ------------- 开始 -------------
+2023-12-25 20:12:10.427 INFO  com.sp.trainmember.aspect.LogAspect               :49   [32m                  [0;39m 请求地址: http://localhost:8081/member/register POST
+2023-12-25 20:12:10.429 INFO  com.sp.trainmember.aspect.LogAspect               :50   [32m                  [0;39m 类名方法: com.sp.trainmember.controller.MemberController.register
+2023-12-25 20:12:10.429 INFO  com.sp.trainmember.aspect.LogAspect               :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-12-25 20:12:10.509 INFO  com.sp.trainmember.aspect.LogAspect               :72   [32m                  [0;39m 请求参数: [{}]
+2023-12-25 20:12:10.582 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2023-12-25 20:12:11.705 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b24471f
+2023-12-25 20:12:11.711 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2023-12-25 20:12:11.732 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-12-25 20:12:11.796 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==> Parameters: 123456789(String)
+2023-12-25 20:12:11.857 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m                  [0;39m <==    Columns: id, mobile
+2023-12-25 20:12:11.858 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m                  [0;39m <==        Row: 1703505180028, 123456789
+2023-12-25 20:12:11.861 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m <==      Total: 1
+2023-12-25 20:12:11.890 ERROR o.a.c.c.C.[.[.[/member].[dispatcherServlet]       :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [/member] threw exception [Request processing failed: java.lang.RuntimeException: 用户已注册] with root cause
+java.lang.RuntimeException: 用户已注册
+	at com.sp.trainmember.service.MemberService.register(MemberService.java:35)
+	at com.sp.trainmember.controller.MemberController.register(MemberController.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.sp.trainmember.aspect.LogAspect.doAround(LogAspect.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.sp.trainmember.controller.MemberController$$SpringCGLIB$$0.register(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-25 20:13:17.471 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-12-25 20:13:17.486 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:13:17.487 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-12-25 20:13:17.488 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-12-25 20:13:17.491 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [member] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
+2023-12-25 20:13:17.492 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:13:17.494 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:13:17.498 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-12-25 20:13:17.507 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2023-12-25 20:13:17.827 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.8.1 with PID 95196 (D:\project\train12306\train\train-member\target\classes started by 15478 in D:\project\train12306\train)
+2023-12-25 20:13:17.828 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-12-25 20:13:18.117 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=cf238a6d-701a-384f-b6d9-b0042ad08c86
+2023-12-25 20:13:18.255 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2023-12-25 20:13:18.256 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:13:18.257 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-12-25 20:13:18.258 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-12-25 20:13:18.287 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-12-25 20:13:18.287 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 456 ms
+2023-12-25 20:13:18.729 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-12-25 20:13:18.969 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2023-12-25 20:13:18.974 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2023-12-25 20:13:19.140 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 1.581 seconds (process running for 91.609)
+2023-12-25 20:13:19.143 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-12-25 20:13:27.596 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-25 20:13:27.597 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-12-25 20:13:27.598 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2023-12-25 20:13:27.604 INFO  com.sp.trainmember.aspect.LogAspect               :48   [32m                  [0;39m ------------- 开始 -------------
+2023-12-25 20:13:27.606 INFO  com.sp.trainmember.aspect.LogAspect               :49   [32m                  [0;39m 请求地址: http://localhost:8081/member/register POST
+2023-12-25 20:13:27.606 INFO  com.sp.trainmember.aspect.LogAspect               :50   [32m                  [0;39m 类名方法: com.sp.trainmember.controller.MemberController.register
+2023-12-25 20:13:27.608 INFO  com.sp.trainmember.aspect.LogAspect               :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2023-12-25 20:13:27.610 INFO  com.sp.trainmember.aspect.LogAspect               :72   [32m                  [0;39m 请求参数: [{}]
+2023-12-25 20:13:27.616 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2023-12-25 20:13:27.932 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m                  [0;39m HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b18e56c
+2023-12-25 20:13:27.933 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2023-12-25 20:13:27.934 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2023-12-25 20:13:27.934 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m ==> Parameters: 123456789(String)
+2023-12-25 20:13:27.947 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m                  [0;39m <==    Columns: id, mobile
+2023-12-25 20:13:27.948 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m                  [0;39m <==        Row: 1703505180028, 123456789
+2023-12-25 20:13:27.948 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m                  [0;39m <==      Total: 1
+2023-12-25 20:13:27.950 ERROR c.s.t.controller.ControllerExceptionHandler       :27   [32m                  [0;39m 系统异常:
+java.lang.RuntimeException: 用户已注册
+	at com.sp.trainmember.service.MemberService.register(MemberService.java:35)
+	at com.sp.trainmember.controller.MemberController.register(MemberController.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.sp.trainmember.aspect.LogAspect.doAround(LogAspect.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+	at com.sp.trainmember.controller.MemberController$$SpringCGLIB$$0.register(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:906)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-12-25 20:13:27.973 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [java.lang.RuntimeException: 用户已注册]
