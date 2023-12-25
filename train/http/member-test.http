@@ -2,8 +2,7 @@
 POST http://localhost:8081/member/register
 Content-Type: application/x-www-form-urlencoded
 
-mobile=1234567890
-
+mobile=
 ###
 # 获取数据库总条数
 GET http://localhost:8081/member/count
