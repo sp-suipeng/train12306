@@ -1,9 +1,7 @@
 package com.sp.trainmember.req;
 
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotBlank;
 
 /**
  * 封装的注册请求
