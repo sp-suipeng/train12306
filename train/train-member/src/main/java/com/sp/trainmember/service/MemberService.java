@@ -1,6 +1,8 @@
 package com.sp.trainmember.service;
 
 import cn.hutool.core.collection.CollUtil;
+import com.sp.traincommon.exception.BusinessException;
+import com.sp.traincommon.exception.BusinessExceptionEnum;
 import com.sp.trainmember.domain.Member;
 import com.sp.trainmember.domain.MemberExample;
 import com.sp.trainmember.mapper.MemberMapper;
@@ -21,7 +23,7 @@ public class MemberService {
 
     /**
      * 注册函数
-     * @param mobile 注册手机号
+     * @param mobileReq 注册手机号
      * @return
      */
     public long register(MemberRegisterReq mobileReq) {
@@ -32,7 +34,7 @@ public class MemberService {
         List<Member> members = mapper.selectByExample(memberExample);
 
         if(CollUtil.isNotEmpty(members)) {
-            throw new RuntimeException("用户已注册");
+            throw new BusinessException(BusinessExceptionEnum.MEMBER_MOBILE_EXIST);
         }
 
         //开始注册流程
