@@ -34,6 +34,6 @@ GET http://localhost:8081/member/count
 
 ###
 #测试接口
-GET http://localhost:8081/member/test/hello
+GET http://localhost:8080/member/test/hello
 
 
