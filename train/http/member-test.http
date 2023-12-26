@@ -1,8 +1,28 @@
+POST http://localhost:8081/member/login
+Content-Type: application/x-www-form-urlencoded
+
+mobile=13000000000&code=8888
+
+###
+
+#测试登录接口
+POST http://localhost:8081/member/sendcode
+Content-Type: application/x-www-form-urlencoded
+
+mobile=13000000000
+
+###
+# 测试注册接口
+POST http://localhost:8081/member/sendcode
+Content-Type: application/x-www-form-urlencoded
+
+mobile=13000000000
+
 # 测试注册接口
 POST http://localhost:8081/member/register
 Content-Type: application/x-www-form-urlencoded
 
-mobile=
+mobile=12345678901
 ###
 # 获取数据库总条数
 GET http://localhost:8081/member/count

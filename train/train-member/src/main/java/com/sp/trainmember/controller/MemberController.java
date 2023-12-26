@@ -1,7 +1,10 @@
 package com.sp.trainmember.controller;
 
 import com.sp.traincommon.response.CommonResp;
+import com.sp.trainmember.req.MemberLoginReq;
 import com.sp.trainmember.req.MemberRegisterReq;
+import com.sp.trainmember.req.MemberSendCodeReq;
+import com.sp.trainmember.response.MemberLoginResp;
 import com.sp.trainmember.service.MemberService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +37,31 @@ public class MemberController {
         long register = memberService.register(mobileReq);
         CommonResp<Long> commonResp = new CommonResp<>();
         commonResp.setContent(register);
+        return commonResp;
+    }
+
+    /**
+     * 发送短信验证码接口
+     * @param mobileReq
+     * @return
+     */
+    @PostMapping("/sendcode")
+    public CommonResp<Long> sendCode(@Valid MemberSendCodeReq mobileReq) {
+        memberService.sendCode(mobileReq);
+        CommonResp<Long> commonResp = new CommonResp<>();
+        return commonResp;
+    }
+
+    /**
+     * 登录验证码接口
+     * @param mobileReq
+     * @return
+     */
+    @PostMapping("/login")
+    public CommonResp<MemberLoginResp> login(@Valid MemberLoginReq mobileReq) {
+        MemberLoginResp login = memberService.login(mobileReq);
+        CommonResp<MemberLoginResp> commonResp = new CommonResp<>();
+        commonResp.setContent(login);
         return commonResp;
     }
 }
