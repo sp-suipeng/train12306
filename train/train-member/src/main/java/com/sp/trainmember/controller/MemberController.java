@@ -9,12 +9,10 @@ import com.sp.trainmember.service.MemberService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
-
+@CrossOrigin
 @RestController
 public class MemberController {
     @Autowired
@@ -46,7 +44,7 @@ public class MemberController {
      * @return
      */
     @PostMapping("/sendcode")
-    public CommonResp<Long> sendCode(@Valid MemberSendCodeReq mobileReq) {
+    public CommonResp<Long> sendCode(@Valid @RequestBody MemberSendCodeReq mobileReq) {
         memberService.sendCode(mobileReq);
         CommonResp<Long> commonResp = new CommonResp<>();
         return commonResp;
