@@ -69,7 +69,7 @@ export default defineComponent({
     };
 
     const login = () => {
-      axios.post("/member/member/login", loginForm).then((response) => {
+      axios.post("http://localhost:8081/member/login", loginForm).then((response) => {
         let data = response.data;
         if (data.success) {
           notification.success({ description: '登录成功！' });

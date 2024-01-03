@@ -31,7 +31,7 @@ public class MemberController {
      * @return 注册id
      */
     @PostMapping("/register")
-    public CommonResp<Long> register(@Valid MemberRegisterReq mobileReq) {
+    public CommonResp<Long> register(@Valid @RequestBody MemberRegisterReq mobileReq) {
         long register = memberService.register(mobileReq);
         CommonResp<Long> commonResp = new CommonResp<>();
         commonResp.setContent(register);
@@ -56,7 +56,7 @@ public class MemberController {
      * @return
      */
     @PostMapping("/login")
-    public CommonResp<MemberLoginResp> login(@Valid MemberLoginReq mobileReq) {
+    public CommonResp<MemberLoginResp> login(@Valid @RequestBody MemberLoginReq mobileReq) {
         MemberLoginResp login = memberService.login(mobileReq);
         CommonResp<MemberLoginResp> commonResp = new CommonResp<>();
         commonResp.setContent(login);
