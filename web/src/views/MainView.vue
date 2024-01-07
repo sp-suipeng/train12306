@@ -74,6 +74,7 @@ import TheHeader from "@/components/TheHeader.vue";
 const selectedKeys2 = ref(['1']);
 const openKeys = ref(['sub1']);
 </script>
+<!--写scoped 表明是局部生效-->
 <style scoped>
 /* 设置布局填满屏幕 */
 
