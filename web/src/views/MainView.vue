@@ -1,19 +1,7 @@
 <template>
-<!--  解决屏幕铺不满的问题-->                <!--解决logo不显示问题-->
-  <a-layout style="min-height: 100vh" id="components-layout-demo-top-side-2">
-    <a-layout-header class="header">
-      <div class="logo" />
-      <a-menu
-          v-model:selectedKeys="selectedKeys1"
-          theme="dark"
-          mode="horizontal"
-          :style="{ lineHeight: '64px' }"
-      >
-        <a-menu-item key="1">nav 1</a-menu-item>
-        <a-menu-item key="2">nav 2</a-menu-item>
-        <a-menu-item key="3">nav 3</a-menu-item>
-      </a-menu>
-    </a-layout-header>
+<!--  解决屏幕铺不满的问题-->
+  <a-layout style="min-height: 100vh" >
+    <TheHeader></TheHeader>
     <a-layout>
       <a-layout-sider width="200" style="background: #fff">
         <a-menu
@@ -66,31 +54,30 @@
           <a-breadcrumb-item>List</a-breadcrumb-item>
           <a-breadcrumb-item>App</a-breadcrumb-item>
         </a-breadcrumb>
+
+
         <a-layout-content
             :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
         >
           Content
         </a-layout-content>
+
+
       </a-layout>
     </a-layout>
   </a-layout>
 </template>
 <script setup>
 import { ref } from 'vue';
-const selectedKeys1 = ref(['2']);
+import TheHeader from "@/components/TheHeader.vue";
+
 const selectedKeys2 = ref(['1']);
 const openKeys = ref(['sub1']);
 </script>
 <style scoped>
 /* 设置布局填满屏幕 */
 
-#components-layout-demo-top-side-2 .logo {
-  float: left;
-  width: 120px;
-  height: 31px;
-  margin: 16px 24px 16px 0;
-  background: rgba(255, 255, 255, 0.3);
-}
+
 
 .ant-row-rtl #components-layout-demo-top-side-2 .logo {
   float: right;
