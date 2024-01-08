@@ -2611,3 +2611,440 @@ com.sp.traincommon.exception.BusinessException: null
 2024-01-08 23:42:49.258 INFO  com.sp.traincommon.util.JwtUtil                   :37   [32m1704728569223sl2  [0;39m 生成JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg1NjksIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNDk2OSwiaWF0IjoxNzA0NzI4NTY5fQ.45IBGfvMTlUP02Mkgii4YNF57IMNz5e5cl0XXzGlcUE
 2024-01-08 23:42:49.263 INFO  com.sp.traincommon.aspect.LogAspect               :84   [32m1704728569223sl2  [0;39m 返回结果: {"content":{"id":1739638490989203456,"mobile":"13000000000","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg1NjksIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNDk2OSwiaWF0IjoxNzA0NzI4NTY5fQ.45IBGfvMTlUP02Mkgii4YNF57IMNz5e5cl0XXzGlcUE"},"success":true}
 2024-01-08 23:42:49.263 INFO  com.sp.traincommon.aspect.LogAspect               :85   [32m1704728569223sl2  [0;39m ------------- 结束 耗时：40 ms -------------
+2024-01-08 23:45:30.203 INFO  com.sp.traincommon.aspect.LogAspect               :48   [32m170472873020386s  [0;39m ------------- 开始 -------------
+2024-01-08 23:45:30.203 INFO  com.sp.traincommon.aspect.LogAspect               :49   [32m170472873020386s  [0;39m 请求地址: http://127.0.0.1:8081/member/member/login POST
+2024-01-08 23:45:30.203 INFO  com.sp.traincommon.aspect.LogAspect               :50   [32m170472873020386s  [0;39m 类名方法: com.sp.trainmember.controller.MemberController.login
+2024-01-08 23:45:30.203 INFO  com.sp.traincommon.aspect.LogAspect               :51   [32m170472873020386s  [0;39m 远程地址: 127.0.0.1
+2024-01-08 23:45:30.203 INFO  com.sp.traincommon.aspect.LogAspect               :72   [32m170472873020386s  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
+2024-01-08 23:45:30.225 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m170472873020386s  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2024-01-08 23:45:30.225 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m170472873020386s  [0;39m ==> Parameters: 13000000000(String)
+2024-01-08 23:45:30.244 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m170472873020386s  [0;39m <==    Columns: id, mobile
+2024-01-08 23:45:30.244 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m170472873020386s  [0;39m <==        Row: 1739638490989203456, 13000000000
+2024-01-08 23:45:30.244 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m170472873020386s  [0;39m <==      Total: 1
+2024-01-08 23:45:30.244 INFO  com.sp.traincommon.util.JwtUtil                   :37   [32m170472873020386s  [0;39m 生成JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzMCwiaWF0IjoxNzA0NzI4NzMwfQ.Wk4doaU8QXjYt9vvKlXo-elM1xciKFLGPZrtu7tKAhM
+2024-01-08 23:45:30.244 INFO  com.sp.traincommon.aspect.LogAspect               :84   [32m170472873020386s  [0;39m 返回结果: {"content":{"id":1739638490989203456,"mobile":"13000000000","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzAsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzMCwiaWF0IjoxNzA0NzI4NzMwfQ.Wk4doaU8QXjYt9vvKlXo-elM1xciKFLGPZrtu7tKAhM"},"success":true}
+2024-01-08 23:45:30.244 INFO  com.sp.traincommon.aspect.LogAspect               :85   [32m170472873020386s  [0;39m ------------- 结束 耗时：41 ms -------------
+2024-01-08 23:45:33.205 INFO  com.sp.traincommon.aspect.LogAspect               :48   [32m1704728733205cw4  [0;39m ------------- 开始 -------------
+2024-01-08 23:45:33.205 INFO  com.sp.traincommon.aspect.LogAspect               :49   [32m1704728733205cw4  [0;39m 请求地址: http://127.0.0.1:8081/member/member/login POST
+2024-01-08 23:45:33.205 INFO  com.sp.traincommon.aspect.LogAspect               :50   [32m1704728733205cw4  [0;39m 类名方法: com.sp.trainmember.controller.MemberController.login
+2024-01-08 23:45:33.205 INFO  com.sp.traincommon.aspect.LogAspect               :51   [32m1704728733205cw4  [0;39m 远程地址: 127.0.0.1
+2024-01-08 23:45:33.205 INFO  com.sp.traincommon.aspect.LogAspect               :72   [32m1704728733205cw4  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
+2024-01-08 23:45:33.225 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m1704728733205cw4  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2024-01-08 23:45:33.225 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m1704728733205cw4  [0;39m ==> Parameters: 13000000000(String)
+2024-01-08 23:45:33.246 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m1704728733205cw4  [0;39m <==    Columns: id, mobile
+2024-01-08 23:45:33.246 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m1704728733205cw4  [0;39m <==        Row: 1739638490989203456, 13000000000
+2024-01-08 23:45:33.246 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m1704728733205cw4  [0;39m <==      Total: 1
+2024-01-08 23:45:33.246 INFO  com.sp.traincommon.util.JwtUtil                   :37   [32m1704728733205cw4  [0;39m 生成JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzMywiaWF0IjoxNzA0NzI4NzMzfQ.pvl2-Nsscw6a5Tocza_bojAPvA2ehelLRMhq8IccG2Y
+2024-01-08 23:45:33.246 INFO  com.sp.traincommon.aspect.LogAspect               :84   [32m1704728733205cw4  [0;39m 返回结果: {"content":{"id":1739638490989203456,"mobile":"13000000000","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzMywiaWF0IjoxNzA0NzI4NzMzfQ.pvl2-Nsscw6a5Tocza_bojAPvA2ehelLRMhq8IccG2Y"},"success":true}
+2024-01-08 23:45:33.246 INFO  com.sp.traincommon.aspect.LogAspect               :85   [32m1704728733205cw4  [0;39m ------------- 结束 耗时：41 ms -------------
+2024-01-08 23:45:36.324 INFO  com.sp.traincommon.aspect.LogAspect               :48   [32m1704728736324mpl  [0;39m ------------- 开始 -------------
+2024-01-08 23:45:36.329 INFO  com.sp.traincommon.aspect.LogAspect               :49   [32m1704728736324mpl  [0;39m 请求地址: http://127.0.0.1:8081/member/member/login POST
+2024-01-08 23:45:36.329 INFO  com.sp.traincommon.aspect.LogAspect               :50   [32m1704728736324mpl  [0;39m 类名方法: com.sp.trainmember.controller.MemberController.login
+2024-01-08 23:45:36.329 INFO  com.sp.traincommon.aspect.LogAspect               :51   [32m1704728736324mpl  [0;39m 远程地址: 127.0.0.1
+2024-01-08 23:45:36.329 INFO  com.sp.traincommon.aspect.LogAspect               :72   [32m1704728736324mpl  [0;39m 请求参数: [{"code":"8888","mobile":"13000000000"}]
+2024-01-08 23:45:36.344 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m1704728736324mpl  [0;39m ==>  Preparing: select id, mobile from member WHERE ( mobile = ? )
+2024-01-08 23:45:36.348 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m1704728736324mpl  [0;39m ==> Parameters: 13000000000(String)
+2024-01-08 23:45:36.365 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m1704728736324mpl  [0;39m <==    Columns: id, mobile
+2024-01-08 23:45:36.365 TRACE c.s.t.mapper.MemberMapper.selectByExample         :143  [32m1704728736324mpl  [0;39m <==        Row: 1739638490989203456, 13000000000
+2024-01-08 23:45:36.365 DEBUG c.s.t.mapper.MemberMapper.selectByExample         :137  [32m1704728736324mpl  [0;39m <==      Total: 1
+2024-01-08 23:45:36.365 INFO  com.sp.traincommon.util.JwtUtil                   :37   [32m1704728736324mpl  [0;39m 生成JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:45:36.365 INFO  com.sp.traincommon.aspect.LogAspect               :84   [32m1704728736324mpl  [0;39m 返回结果: {"content":{"id":1739638490989203456,"mobile":"13000000000","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc"},"success":true}
+2024-01-08 23:45:36.365 INFO  com.sp.traincommon.aspect.LogAspect               :85   [32m1704728736324mpl  [0;39m ------------- 结束 耗时：41 ms -------------
+2024-01-08 23:46:34.426 ERROR c.s.t.controller.ControllerExceptionHandler       :27   [32m                  [0;39m 系统异常:
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:261)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:504)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1274)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:895)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-08 23:46:34.430 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-01-08 23:47:15.236 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :29   [32m17047288352360n5  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:47:15.247 INFO  com.sp.traincommon.util.JwtUtil                   :55   [32m17047288352360n5  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:47:15.247 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :31   [32m17047288352360n5  [0;39m 当前登录会员：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:47:15.256 ERROR c.s.t.controller.ControllerExceptionHandler       :27   [32m17047288352360n5  [0;39m 系统异常:
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.sp.traincommon.response.CommonResp<java.util.List<com.sp.trainmember.response.PassengerQueryResp>> com.sp.trainmember.controller.PassengerController.queryList(com.sp.trainmember.req.PassengerQueryReq)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:166)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:136)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:181)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:148)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:895)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-08 23:47:15.256 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m17047288352360n5  [0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.sp.traincommon.response.CommonResp<java.util.List<com.sp.trainmember.response.PassengerQueryResp>> com.sp.trainmember.controller.PassengerController.queryList(com.sp.trainmember.req.PassengerQueryReq)]
+2024-01-08 23:47:22.103 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :29   [32m1704728842103a9x  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:47:22.103 INFO  com.sp.traincommon.util.JwtUtil                   :55   [32m1704728842103a9x  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:47:22.103 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :31   [32m1704728842103a9x  [0;39m 当前登录会员：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:47:22.108 ERROR c.s.t.controller.ControllerExceptionHandler       :27   [32m1704728842103a9x  [0;39m 系统异常:
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.sp.traincommon.response.CommonResp<java.util.List<com.sp.trainmember.response.PassengerQueryResp>> com.sp.trainmember.controller.PassengerController.queryList(com.sp.trainmember.req.PassengerQueryReq)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:166)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:136)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:181)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:148)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:895)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-08 23:47:22.108 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m1704728842103a9x  [0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.sp.traincommon.response.CommonResp<java.util.List<com.sp.trainmember.response.PassengerQueryResp>> com.sp.trainmember.controller.PassengerController.queryList(com.sp.trainmember.req.PassengerQueryReq)]
+2024-01-08 23:47:38.767 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :29   [32m1704728858767s1d  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:47:38.767 INFO  com.sp.traincommon.util.JwtUtil                   :55   [32m1704728858767s1d  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:47:38.767 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :31   [32m1704728858767s1d  [0;39m 当前登录会员：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:47:38.767 ERROR c.s.t.controller.ControllerExceptionHandler       :27   [32m1704728858767s1d  [0;39m 系统异常:
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.sp.traincommon.response.CommonResp<java.util.List<com.sp.trainmember.response.PassengerQueryResp>> com.sp.trainmember.controller.PassengerController.queryList(com.sp.trainmember.req.PassengerQueryReq)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:166)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:136)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:181)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:148)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:895)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-08 23:47:38.772 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m1704728858767s1d  [0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.sp.traincommon.response.CommonResp<java.util.List<com.sp.trainmember.response.PassengerQueryResp>> com.sp.trainmember.controller.PassengerController.queryList(com.sp.trainmember.req.PassengerQueryReq)]
+2024-01-08 23:49:02.371 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2024-01-08 23:49:02.386 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2024-01-08 23:49:05.950 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.7 with PID 28940 (C:\Users\15478\Desktop\train12306\train12306\train\train-member\target\classes started by 15478 in C:\Users\15478\Desktop\train12306\train12306\train)
+2024-01-08 23:49:05.950 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-01-08 23:49:05.979 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-08 23:49:05.979 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-08 23:49:06.436 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=3537829c-2a48-353e-943a-3065df127d6e
+2024-01-08 23:49:06.844 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2024-01-08 23:49:06.848 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-08 23:49:06.848 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-01-08 23:49:06.854 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2024-01-08 23:49:06.900 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-01-08 23:49:06.900 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 921 ms
+2024-01-08 23:49:07.401 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-01-08 23:49:07.679 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2024-01-08 23:49:07.694 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2024-01-08 23:49:07.942 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 2.61 seconds (process running for 3.145)
+2024-01-08 23:49:11.035 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-08 23:49:11.035 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-01-08 23:49:11.040 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 5 ms
+2024-01-08 23:49:11.060 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :29   [32m17047289510575n0  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:49:11.179 INFO  com.sp.traincommon.util.JwtUtil                   :55   [32m17047289510575n0  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:49:11.179 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :31   [32m17047289510575n0  [0;39m 当前登录会员：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:49:11.210 ERROR c.s.t.controller.ControllerExceptionHandler       :27   [32m17047289510575n0  [0;39m 系统异常:
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.sp.traincommon.response.CommonResp<java.util.List<com.sp.trainmember.response.PassengerQueryResp>> com.sp.trainmember.controller.PassengerController.queryList(com.sp.trainmember.req.PassengerQueryReq)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:166)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:136)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:181)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:148)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:895)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:880)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1739)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-08 23:49:11.245 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m17047289510575n0  [0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.sp.traincommon.response.CommonResp<java.util.List<com.sp.trainmember.response.PassengerQueryResp>> com.sp.trainmember.controller.PassengerController.queryList(com.sp.trainmember.req.PassengerQueryReq)]
+2024-01-08 23:50:22.701 INFO  com.sp.trainmember.TrainMemerApplication          :51   [32m                  [0;39m Starting TrainMemerApplication using Java 17.0.7 with PID 25716 (C:\Users\15478\Desktop\train12306\train12306\train\train-member\target\classes started by 15478 in C:\Users\15478\Desktop\train12306\train12306\train)
+2024-01-08 23:50:22.702 INFO  com.sp.trainmember.TrainMemerApplication          :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2024-01-08 23:50:22.740 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-08 23:50:22.740 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-08 23:50:23.217 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=3537829c-2a48-353e-943a-3065df127d6e
+2024-01-08 23:50:23.637 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :114  [32m                  [0;39m Tomcat initialized with port(s): 8081 (http)
+2024-01-08 23:50:23.647 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-08 23:50:23.647 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2024-01-08 23:50:23.649 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.1]
+2024-01-08 23:50:23.689 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2024-01-08 23:50:23.689 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 949 ms
+2024-01-08 23:50:24.222 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2024-01-08 23:50:24.522 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8081"]
+2024-01-08 23:50:24.537 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :226  [32m                  [0;39m Tomcat started on port(s): 8081 (http) with context path '/member'
+2024-01-08 23:50:24.790 INFO  com.sp.trainmember.TrainMemerApplication          :57   [32m                  [0;39m Started TrainMemerApplication in 2.716 seconds (process running for 3.276)
+2024-01-08 23:50:27.492 INFO  o.a.c.c.C.[Tomcat].[localhost].[/member]          :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-08 23:50:27.497 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2024-01-08 23:50:27.497 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2024-01-08 23:50:27.517 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :29   [32m1704729027512xfd  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:50:27.632 INFO  com.sp.traincommon.util.JwtUtil                   :55   [32m1704729027512xfd  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:50:27.632 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :31   [32m1704729027512xfd  [0;39m 当前登录会员：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:50:27.678 INFO  com.sp.traincommon.aspect.LogAspect               :48   [32m1704729027512xfd  [0;39m ------------- 开始 -------------
+2024-01-08 23:50:27.678 INFO  com.sp.traincommon.aspect.LogAspect               :49   [32m1704729027512xfd  [0;39m 请求地址: http://127.0.0.1:8081/member/passenger/query-list GET
+2024-01-08 23:50:27.678 INFO  com.sp.traincommon.aspect.LogAspect               :50   [32m1704729027512xfd  [0;39m 类名方法: com.sp.trainmember.controller.PassengerController.queryList
+2024-01-08 23:50:27.678 INFO  com.sp.traincommon.aspect.LogAspect               :51   [32m1704729027512xfd  [0;39m 远程地址: 127.0.0.1
+2024-01-08 23:50:27.712 INFO  com.sp.traincommon.aspect.LogAspect               :72   [32m1704729027512xfd  [0;39m 请求参数: [{}]
+2024-01-08 23:50:27.738 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1704729027512xfd  [0;39m HikariPool-1 - Starting...
+2024-01-08 23:50:28.377 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1704729027512xfd  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@399265e4
+2024-01-08 23:50:28.380 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1704729027512xfd  [0;39m HikariPool-1 - Start completed.
+2024-01-08 23:50:28.395 DEBUG c.s.t.mapper.PassengerMapper.selectByExample      :137  [32m1704729027512xfd  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? )
+2024-01-08 23:50:28.407 DEBUG c.s.t.mapper.PassengerMapper.selectByExample      :137  [32m1704729027512xfd  [0;39m ==> Parameters: 1739638490989203456(Long)
+2024-01-08 23:50:28.457 TRACE c.s.t.mapper.PassengerMapper.selectByExample      :143  [32m1704729027512xfd  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2024-01-08 23:50:28.462 TRACE c.s.t.mapper.PassengerMapper.selectByExample      :143  [32m1704729027512xfd  [0;39m <==        Row: 1744337226784968704, 1739638490989203456, test, 123321, 1, 2024-01-08 20:36:17.737, 2024-01-08 20:36:17.737
+2024-01-08 23:50:28.462 DEBUG c.s.t.mapper.PassengerMapper.selectByExample      :137  [32m1704729027512xfd  [0;39m <==      Total: 1
+2024-01-08 23:50:28.472 INFO  com.sp.traincommon.aspect.LogAspect               :84   [32m1704729027512xfd  [0;39m 返回结果: {"content":[{"createTime":1704717377737,"id":1744337226784968704,"idCard":"123321","memberId":1739638490989203456,"name":"test","type":"1","updateTime":1704717377737}],"success":true}
+2024-01-08 23:50:28.472 INFO  com.sp.traincommon.aspect.LogAspect               :85   [32m1704729027512xfd  [0;39m ------------- 结束 耗时：794 ms -------------
+2024-01-08 23:50:37.673 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :29   [32m1704729037673bat  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:50:37.673 INFO  com.sp.traincommon.util.JwtUtil                   :55   [32m1704729037673bat  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:50:37.673 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :31   [32m1704729037673bat  [0;39m 当前登录会员：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:50:37.673 INFO  com.sp.traincommon.aspect.LogAspect               :48   [32m1704729037673bat  [0;39m ------------- 开始 -------------
+2024-01-08 23:50:37.673 INFO  com.sp.traincommon.aspect.LogAspect               :49   [32m1704729037673bat  [0;39m 请求地址: http://127.0.0.1:8081/member/passenger/query-list GET
+2024-01-08 23:50:37.677 INFO  com.sp.traincommon.aspect.LogAspect               :50   [32m1704729037673bat  [0;39m 类名方法: com.sp.trainmember.controller.PassengerController.queryList
+2024-01-08 23:50:37.677 INFO  com.sp.traincommon.aspect.LogAspect               :51   [32m1704729037673bat  [0;39m 远程地址: 127.0.0.1
+2024-01-08 23:50:37.677 INFO  com.sp.traincommon.aspect.LogAspect               :72   [32m1704729037673bat  [0;39m 请求参数: [{}]
+2024-01-08 23:50:37.694 DEBUG c.s.t.mapper.PassengerMapper.selectByExample      :137  [32m1704729037673bat  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? )
+2024-01-08 23:50:37.694 DEBUG c.s.t.mapper.PassengerMapper.selectByExample      :137  [32m1704729037673bat  [0;39m ==> Parameters: 1739638490989203456(Long)
+2024-01-08 23:50:37.709 TRACE c.s.t.mapper.PassengerMapper.selectByExample      :143  [32m1704729037673bat  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2024-01-08 23:50:37.709 TRACE c.s.t.mapper.PassengerMapper.selectByExample      :143  [32m1704729037673bat  [0;39m <==        Row: 1744337226784968704, 1739638490989203456, test, 123321, 1, 2024-01-08 20:36:17.737, 2024-01-08 20:36:17.737
+2024-01-08 23:50:37.709 DEBUG c.s.t.mapper.PassengerMapper.selectByExample      :137  [32m1704729037673bat  [0;39m <==      Total: 1
+2024-01-08 23:50:37.714 INFO  com.sp.traincommon.aspect.LogAspect               :84   [32m1704729037673bat  [0;39m 返回结果: {"content":[{"createTime":1704717377737,"id":1744337226784968704,"idCard":"123321","memberId":1739638490989203456,"name":"test","type":"1","updateTime":1704717377737}],"success":true}
+2024-01-08 23:50:37.714 INFO  com.sp.traincommon.aspect.LogAspect               :85   [32m1704729037673bat  [0;39m ------------- 结束 耗时：41 ms -------------
+2024-01-08 23:51:01.137 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :29   [32m1704729061137d36  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:51:01.137 INFO  com.sp.traincommon.util.JwtUtil                   :55   [32m1704729061137d36  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:51:01.137 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :31   [32m1704729061137d36  [0;39m 当前登录会员：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:51:01.152 INFO  com.sp.traincommon.aspect.LogAspect               :48   [32m1704729061137d36  [0;39m ------------- 开始 -------------
+2024-01-08 23:51:01.152 INFO  com.sp.traincommon.aspect.LogAspect               :49   [32m1704729061137d36  [0;39m 请求地址: http://127.0.0.1:8081/member/passenger/save POST
+2024-01-08 23:51:01.152 INFO  com.sp.traincommon.aspect.LogAspect               :50   [32m1704729061137d36  [0;39m 类名方法: com.sp.trainmember.controller.PassengerController.save
+2024-01-08 23:51:01.152 INFO  com.sp.traincommon.aspect.LogAspect               :51   [32m1704729061137d36  [0;39m 远程地址: 127.0.0.1
+2024-01-08 23:51:01.158 INFO  com.sp.traincommon.aspect.LogAspect               :72   [32m1704729061137d36  [0;39m 请求参数: [{"idCard":"123321","name":"test","type":"1"}]
+2024-01-08 23:51:01.182 DEBUG com.sp.trainmember.mapper.PassengerMapper.insert  :137  [32m1704729061137d36  [0;39m ==>  Preparing: insert into passenger (id, member_id, `name`, id_card, `type`, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?)
+2024-01-08 23:51:01.182 DEBUG com.sp.trainmember.mapper.PassengerMapper.insert  :137  [32m1704729061137d36  [0;39m ==> Parameters: 1744386230625374208(Long), 1739638490989203456(Long), test(String), 123321(String), 1(String), 2024-01-08 23:51:01.158(Timestamp), 2024-01-08 23:51:01.158(Timestamp)
+2024-01-08 23:51:01.227 DEBUG com.sp.trainmember.mapper.PassengerMapper.insert  :137  [32m1704729061137d36  [0;39m <==    Updates: 1
+2024-01-08 23:51:01.227 INFO  com.sp.traincommon.aspect.LogAspect               :84   [32m1704729061137d36  [0;39m 返回结果: {"success":true}
+2024-01-08 23:51:01.227 INFO  com.sp.traincommon.aspect.LogAspect               :85   [32m1704729061137d36  [0;39m ------------- 结束 耗时：75 ms -------------
+2024-01-08 23:51:02.837 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :29   [32m1704729062837tyx  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:51:02.837 INFO  com.sp.traincommon.util.JwtUtil                   :55   [32m1704729062837tyx  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:51:02.837 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :31   [32m1704729062837tyx  [0;39m 当前登录会员：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:51:02.837 INFO  com.sp.traincommon.aspect.LogAspect               :48   [32m1704729062837tyx  [0;39m ------------- 开始 -------------
+2024-01-08 23:51:02.837 INFO  com.sp.traincommon.aspect.LogAspect               :49   [32m1704729062837tyx  [0;39m 请求地址: http://127.0.0.1:8081/member/passenger/save POST
+2024-01-08 23:51:02.837 INFO  com.sp.traincommon.aspect.LogAspect               :50   [32m1704729062837tyx  [0;39m 类名方法: com.sp.trainmember.controller.PassengerController.save
+2024-01-08 23:51:02.837 INFO  com.sp.traincommon.aspect.LogAspect               :51   [32m1704729062837tyx  [0;39m 远程地址: 127.0.0.1
+2024-01-08 23:51:02.837 INFO  com.sp.traincommon.aspect.LogAspect               :72   [32m1704729062837tyx  [0;39m 请求参数: [{"idCard":"123321","name":"test","type":"1"}]
+2024-01-08 23:51:02.857 DEBUG com.sp.trainmember.mapper.PassengerMapper.insert  :137  [32m1704729062837tyx  [0;39m ==>  Preparing: insert into passenger (id, member_id, `name`, id_card, `type`, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?)
+2024-01-08 23:51:02.857 DEBUG com.sp.trainmember.mapper.PassengerMapper.insert  :137  [32m1704729062837tyx  [0;39m ==> Parameters: 1744386237629861888(Long), 1739638490989203456(Long), test(String), 123321(String), 1(String), 2024-01-08 23:51:02.837(Timestamp), 2024-01-08 23:51:02.837(Timestamp)
+2024-01-08 23:51:02.897 DEBUG com.sp.trainmember.mapper.PassengerMapper.insert  :137  [32m1704729062837tyx  [0;39m <==    Updates: 1
+2024-01-08 23:51:02.897 INFO  com.sp.traincommon.aspect.LogAspect               :84   [32m1704729062837tyx  [0;39m 返回结果: {"success":true}
+2024-01-08 23:51:02.897 INFO  com.sp.traincommon.aspect.LogAspect               :85   [32m1704729062837tyx  [0;39m ------------- 结束 耗时：60 ms -------------
+2024-01-08 23:51:04.087 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :29   [32m1704729064087ow2  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:51:04.087 INFO  com.sp.traincommon.util.JwtUtil                   :55   [32m1704729064087ow2  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:51:04.087 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :31   [32m1704729064087ow2  [0;39m 当前登录会员：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:51:04.087 INFO  com.sp.traincommon.aspect.LogAspect               :48   [32m1704729064087ow2  [0;39m ------------- 开始 -------------
+2024-01-08 23:51:04.092 INFO  com.sp.traincommon.aspect.LogAspect               :49   [32m1704729064087ow2  [0;39m 请求地址: http://127.0.0.1:8081/member/passenger/save POST
+2024-01-08 23:51:04.092 INFO  com.sp.traincommon.aspect.LogAspect               :50   [32m1704729064087ow2  [0;39m 类名方法: com.sp.trainmember.controller.PassengerController.save
+2024-01-08 23:51:04.092 INFO  com.sp.traincommon.aspect.LogAspect               :51   [32m1704729064087ow2  [0;39m 远程地址: 127.0.0.1
+2024-01-08 23:51:04.092 INFO  com.sp.traincommon.aspect.LogAspect               :72   [32m1704729064087ow2  [0;39m 请求参数: [{"idCard":"123321","name":"test","type":"1"}]
+2024-01-08 23:51:04.108 DEBUG com.sp.trainmember.mapper.PassengerMapper.insert  :137  [32m1704729064087ow2  [0;39m ==>  Preparing: insert into passenger (id, member_id, `name`, id_card, `type`, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?)
+2024-01-08 23:51:04.108 DEBUG com.sp.trainmember.mapper.PassengerMapper.insert  :137  [32m1704729064087ow2  [0;39m ==> Parameters: 1744386242893713408(Long), 1739638490989203456(Long), test(String), 123321(String), 1(String), 2024-01-08 23:51:04.092(Timestamp), 2024-01-08 23:51:04.092(Timestamp)
+2024-01-08 23:51:04.149 DEBUG com.sp.trainmember.mapper.PassengerMapper.insert  :137  [32m1704729064087ow2  [0;39m <==    Updates: 1
+2024-01-08 23:51:04.149 INFO  com.sp.traincommon.aspect.LogAspect               :84   [32m1704729064087ow2  [0;39m 返回结果: {"success":true}
+2024-01-08 23:51:04.149 INFO  com.sp.traincommon.aspect.LogAspect               :85   [32m1704729064087ow2  [0;39m ------------- 结束 耗时：62 ms -------------
+2024-01-08 23:51:06.137 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :29   [32m1704729066137m5z  [0;39m 获取会员登录token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:51:06.137 INFO  com.sp.traincommon.util.JwtUtil                   :55   [32m1704729066137m5z  [0;39m 根据token获取原始内容：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:51:06.137 INFO  com.sp.traincommon.interceptor.MemberInterceptor  :31   [32m1704729066137m5z  [0;39m 当前登录会员：{"mobile":"13000000000","id":1739638490989203456}
+2024-01-08 23:51:06.137 INFO  com.sp.traincommon.aspect.LogAspect               :48   [32m1704729066137m5z  [0;39m ------------- 开始 -------------
+2024-01-08 23:51:06.137 INFO  com.sp.traincommon.aspect.LogAspect               :49   [32m1704729066137m5z  [0;39m 请求地址: http://127.0.0.1:8081/member/passenger/query-list GET
+2024-01-08 23:51:06.137 INFO  com.sp.traincommon.aspect.LogAspect               :50   [32m1704729066137m5z  [0;39m 类名方法: com.sp.trainmember.controller.PassengerController.queryList
+2024-01-08 23:51:06.137 INFO  com.sp.traincommon.aspect.LogAspect               :51   [32m1704729066137m5z  [0;39m 远程地址: 127.0.0.1
+2024-01-08 23:51:06.137 INFO  com.sp.traincommon.aspect.LogAspect               :72   [32m1704729066137m5z  [0;39m 请求参数: [{}]
+2024-01-08 23:51:06.157 DEBUG c.s.t.mapper.PassengerMapper.selectByExample      :137  [32m1704729066137m5z  [0;39m ==>  Preparing: select id, member_id, `name`, id_card, `type`, create_time, update_time from passenger WHERE ( member_id = ? )
+2024-01-08 23:51:06.157 DEBUG c.s.t.mapper.PassengerMapper.selectByExample      :137  [32m1704729066137m5z  [0;39m ==> Parameters: 1739638490989203456(Long)
+2024-01-08 23:51:06.175 TRACE c.s.t.mapper.PassengerMapper.selectByExample      :143  [32m1704729066137m5z  [0;39m <==    Columns: id, member_id, name, id_card, type, create_time, update_time
+2024-01-08 23:51:06.177 TRACE c.s.t.mapper.PassengerMapper.selectByExample      :143  [32m1704729066137m5z  [0;39m <==        Row: 1744337226784968704, 1739638490989203456, test, 123321, 1, 2024-01-08 20:36:17.737, 2024-01-08 20:36:17.737
+2024-01-08 23:51:06.177 TRACE c.s.t.mapper.PassengerMapper.selectByExample      :143  [32m1704729066137m5z  [0;39m <==        Row: 1744386230625374208, 1739638490989203456, test, 123321, 1, 2024-01-08 23:51:01.158, 2024-01-08 23:51:01.158
+2024-01-08 23:51:06.177 TRACE c.s.t.mapper.PassengerMapper.selectByExample      :143  [32m1704729066137m5z  [0;39m <==        Row: 1744386237629861888, 1739638490989203456, test, 123321, 1, 2024-01-08 23:51:02.837, 2024-01-08 23:51:02.837
+2024-01-08 23:51:06.177 TRACE c.s.t.mapper.PassengerMapper.selectByExample      :143  [32m1704729066137m5z  [0;39m <==        Row: 1744386242893713408, 1739638490989203456, test, 123321, 1, 2024-01-08 23:51:04.092, 2024-01-08 23:51:04.092
+2024-01-08 23:51:06.177 DEBUG c.s.t.mapper.PassengerMapper.selectByExample      :137  [32m1704729066137m5z  [0;39m <==      Total: 4
+2024-01-08 23:51:06.177 INFO  com.sp.traincommon.aspect.LogAspect               :84   [32m1704729066137m5z  [0;39m 返回结果: {"content":[{"createTime":1704717377737,"id":1744337226784968704,"idCard":"123321","memberId":1739638490989203456,"name":"test","type":"1","updateTime":1704717377737},{"createTime":1704729061158,"id":1744386230625374208,"idCard":"123321","memberId":1739638490989203456,"name":"test","type":"1","updateTime":1704729061158},{"createTime":1704729062837,"id":1744386237629861888,"idCard":"123321","memberId":1739638490989203456,"name":"test","type":"1","updateTime":1704729062837},{"createTime":1704729064092,"id":1744386242893713408,"idCard":"123321","memberId":1739638490989203456,"name":"test","type":"1","updateTime":1704729064092}],"success":true}
+2024-01-08 23:51:06.177 INFO  com.sp.traincommon.aspect.LogAspect               :85   [32m1704729066137m5z  [0;39m ------------- 结束 耗时：40 ms -------------

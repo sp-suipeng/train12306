@@ -202,3 +202,70 @@
 2024-01-08 23:43:46.942 INFO  com.sp.gateway.filter.LoginMemberFilter           :31   [32m                  [0;39m 需要登录校验:/member/passenger/save
 2024-01-08 23:43:46.942 INFO  com.sp.gateway.filter.LoginMemberFilter           :36   [32m                  [0;39m 会员登录验证开始, token={{token}}
 2024-01-08 23:43:46.942 WARN  com.sp.gateway.filter.LoginMemberFilter           :49   [32m                  [0;39m token 无效，请求被拦截
+2024-01-08 23:45:30.198 INFO  com.sp.gateway.filter.LoginMemberFilter           :28   [32m                  [0;39m 不需要登录校验:/member/member/login
+2024-01-08 23:45:30.198 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-08 23:45:33.201 INFO  com.sp.gateway.filter.LoginMemberFilter           :28   [32m                  [0;39m 不需要登录校验:/member/member/login
+2024-01-08 23:45:33.201 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-08 23:45:36.324 INFO  com.sp.gateway.filter.LoginMemberFilter           :28   [32m                  [0;39m 不需要登录校验:/member/member/login
+2024-01-08 23:45:36.324 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-08 23:46:34.416 INFO  com.sp.gateway.filter.LoginMemberFilter           :31   [32m                  [0;39m 需要登录校验:/member/passenger/save
+2024-01-08 23:46:34.420 INFO  com.sp.gateway.filter.LoginMemberFilter           :36   [32m                  [0;39m 会员登录验证开始, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:46:34.420 INFO  com.sp.gateway.util.JwtUtil                       :46   [32m                  [0;39m JWT token校验结果：true
+2024-01-08 23:46:34.420 INFO  com.sp.gateway.filter.LoginMemberFilter           :46   [32m                  [0;39m token有效，放行该请求
+2024-01-08 23:46:34.420 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-08 23:47:15.236 INFO  com.sp.gateway.filter.LoginMemberFilter           :31   [32m                  [0;39m 需要登录校验:/member/passenger/query-list
+2024-01-08 23:47:15.236 INFO  com.sp.gateway.filter.LoginMemberFilter           :36   [32m                  [0;39m 会员登录验证开始, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:47:15.236 INFO  com.sp.gateway.util.JwtUtil                       :46   [32m                  [0;39m JWT token校验结果：true
+2024-01-08 23:47:15.236 INFO  com.sp.gateway.filter.LoginMemberFilter           :46   [32m                  [0;39m token有效，放行该请求
+2024-01-08 23:47:15.236 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-08 23:47:22.098 INFO  com.sp.gateway.filter.LoginMemberFilter           :31   [32m                  [0;39m 需要登录校验:/member/passenger/query-list
+2024-01-08 23:47:22.098 INFO  com.sp.gateway.filter.LoginMemberFilter           :36   [32m                  [0;39m 会员登录验证开始, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:47:22.103 INFO  com.sp.gateway.util.JwtUtil                       :46   [32m                  [0;39m JWT token校验结果：true
+2024-01-08 23:47:22.103 INFO  com.sp.gateway.filter.LoginMemberFilter           :46   [32m                  [0;39m token有效，放行该请求
+2024-01-08 23:47:22.103 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-08 23:47:38.761 INFO  com.sp.gateway.filter.LoginMemberFilter           :31   [32m                  [0;39m 需要登录校验:/member/passenger/query-list
+2024-01-08 23:47:38.761 INFO  com.sp.gateway.filter.LoginMemberFilter           :36   [32m                  [0;39m 会员登录验证开始, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:47:38.761 INFO  com.sp.gateway.util.JwtUtil                       :46   [32m                  [0;39m JWT token校验结果：true
+2024-01-08 23:47:38.761 INFO  com.sp.gateway.filter.LoginMemberFilter           :46   [32m                  [0;39m token有效，放行该请求
+2024-01-08 23:47:38.766 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-08 23:49:10.999 INFO  com.sp.gateway.filter.LoginMemberFilter           :31   [32m                  [0;39m 需要登录校验:/member/passenger/query-list
+2024-01-08 23:49:10.999 INFO  com.sp.gateway.filter.LoginMemberFilter           :36   [32m                  [0;39m 会员登录验证开始, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:49:10.999 INFO  com.sp.gateway.util.JwtUtil                       :46   [32m                  [0;39m JWT token校验结果：true
+2024-01-08 23:49:10.999 INFO  com.sp.gateway.filter.LoginMemberFilter           :46   [32m                  [0;39m token有效，放行该请求
+2024-01-08 23:49:10.999 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-08 23:50:27.457 INFO  com.sp.gateway.filter.LoginMemberFilter           :31   [32m                  [0;39m 需要登录校验:/member/passenger/query-list
+2024-01-08 23:50:27.457 INFO  com.sp.gateway.filter.LoginMemberFilter           :36   [32m                  [0;39m 会员登录验证开始, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:50:27.457 INFO  com.sp.gateway.util.JwtUtil                       :46   [32m                  [0;39m JWT token校验结果：true
+2024-01-08 23:50:27.457 INFO  com.sp.gateway.filter.LoginMemberFilter           :46   [32m                  [0;39m token有效，放行该请求
+2024-01-08 23:50:27.457 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-08 23:50:37.668 INFO  com.sp.gateway.filter.LoginMemberFilter           :31   [32m                  [0;39m 需要登录校验:/member/passenger/query-list
+2024-01-08 23:50:37.668 INFO  com.sp.gateway.filter.LoginMemberFilter           :36   [32m                  [0;39m 会员登录验证开始, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:50:37.668 INFO  com.sp.gateway.util.JwtUtil                       :46   [32m                  [0;39m JWT token校验结果：true
+2024-01-08 23:50:37.668 INFO  com.sp.gateway.filter.LoginMemberFilter           :46   [32m                  [0;39m token有效，放行该请求
+2024-01-08 23:50:37.668 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-08 23:50:40.317 INFO  com.sp.gateway.filter.LoginMemberFilter           :31   [32m                  [0;39m 需要登录校验:/member/passenger/save
+2024-01-08 23:50:40.320 INFO  com.sp.gateway.filter.LoginMemberFilter           :36   [32m                  [0;39m 会员登录验证开始, token={{token}}
+2024-01-08 23:50:40.320 WARN  com.sp.gateway.filter.LoginMemberFilter           :49   [32m                  [0;39m token 无效，请求被拦截
+2024-01-08 23:50:46.768 INFO  com.sp.gateway.filter.LoginMemberFilter           :31   [32m                  [0;39m 需要登录校验:/member/passenger/save
+2024-01-08 23:50:46.768 INFO  com.sp.gateway.filter.LoginMemberFilter           :36   [32m                  [0;39m 会员登录验证开始, token={{token}}
+2024-01-08 23:50:46.768 WARN  com.sp.gateway.filter.LoginMemberFilter           :49   [32m                  [0;39m token 无效，请求被拦截
+2024-01-08 23:51:01.131 INFO  com.sp.gateway.filter.LoginMemberFilter           :31   [32m                  [0;39m 需要登录校验:/member/passenger/save
+2024-01-08 23:51:01.132 INFO  com.sp.gateway.filter.LoginMemberFilter           :36   [32m                  [0;39m 会员登录验证开始, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:51:01.132 INFO  com.sp.gateway.util.JwtUtil                       :46   [32m                  [0;39m JWT token校验结果：true
+2024-01-08 23:51:01.132 INFO  com.sp.gateway.filter.LoginMemberFilter           :46   [32m                  [0;39m token有效，放行该请求
+2024-01-08 23:51:01.132 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-08 23:51:02.832 INFO  com.sp.gateway.filter.LoginMemberFilter           :31   [32m                  [0;39m 需要登录校验:/member/passenger/save
+2024-01-08 23:51:02.832 INFO  com.sp.gateway.filter.LoginMemberFilter           :36   [32m                  [0;39m 会员登录验证开始, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:51:02.832 INFO  com.sp.gateway.util.JwtUtil                       :46   [32m                  [0;39m JWT token校验结果：true
+2024-01-08 23:51:02.832 INFO  com.sp.gateway.filter.LoginMemberFilter           :46   [32m                  [0;39m token有效，放行该请求
+2024-01-08 23:51:02.832 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-08 23:51:04.082 INFO  com.sp.gateway.filter.LoginMemberFilter           :31   [32m                  [0;39m 需要登录校验:/member/passenger/save
+2024-01-08 23:51:04.082 INFO  com.sp.gateway.filter.LoginMemberFilter           :36   [32m                  [0;39m 会员登录验证开始, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:51:04.087 INFO  com.sp.gateway.util.JwtUtil                       :46   [32m                  [0;39m JWT token校验结果：true
+2024-01-08 23:51:04.087 INFO  com.sp.gateway.filter.LoginMemberFilter           :46   [32m                  [0;39m token有效，放行该请求
+2024-01-08 23:51:04.087 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-08 23:51:06.131 INFO  com.sp.gateway.filter.LoginMemberFilter           :31   [32m                  [0;39m 需要登录校验:/member/passenger/query-list
+2024-01-08 23:51:06.131 INFO  com.sp.gateway.filter.LoginMemberFilter           :36   [32m                  [0;39m 会员登录验证开始, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+2024-01-08 23:51:06.131 INFO  com.sp.gateway.util.JwtUtil                       :46   [32m                  [0;39m JWT token校验结果：true
+2024-01-08 23:51:06.131 INFO  com.sp.gateway.filter.LoginMemberFilter           :46   [32m                  [0;39m token有效，放行该请求
+2024-01-08 23:51:06.131 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter

@@ -1,13 +1,15 @@
-GET http://localhost:8888/member/passenger/save
+GET http://localhost:8888/member/passenger/query-list
 Accept: application/json
-token: {{token}}
+token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
 
-
+{
+}
 
 ###
 POST http://localhost:8888/member/passenger/save
 Content-Type: application/json
-token:{{token}}
+token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE3MDQ3Mjg3MzYsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE3Mzk2Mzg0OTA5ODkyMDM0NTYsImV4cCI6MTcwNDgxNTEzNiwiaWF0IjoxNzA0NzI4NzM2fQ.JDCNkHKp23B12HQoD5yMWQxUMu6aXZ1cOESQ8Mc3Xwc
+
 
 {
   "name": "test",

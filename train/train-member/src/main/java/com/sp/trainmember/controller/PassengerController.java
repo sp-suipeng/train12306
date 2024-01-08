@@ -1,5 +1,6 @@
 package com.sp.trainmember.controller;
 
+import com.sp.traincommon.context.LoginMemberContext;
 import com.sp.traincommon.response.CommonResp;
 import com.sp.trainmember.req.PassengerQueryReq;
 import com.sp.trainmember.req.PassengerSaveReq;
@@ -25,7 +26,8 @@ public class PassengerController {
     }
 
     @GetMapping("/query-list")
-    public CommonResp<List<PassengerQueryResp>> queryList(@Valid @RequestBody PassengerQueryReq passengerQueryReq) {
+    public CommonResp<List<PassengerQueryResp>> queryList(@Valid  PassengerQueryReq passengerQueryReq) {
+        passengerQueryReq.setMemberId(LoginMemberContext.getId());
         List<PassengerQueryResp> passengerQueryResps = passengerService.queryList(passengerQueryReq);
         return new CommonResp<>(passengerQueryResps);
     }

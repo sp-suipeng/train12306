@@ -5,8 +5,8 @@ Content-Type: application/json
   "mobile": 13000000000,
   "code": "8888"
 }
-
 ### 通过下面的脚本将token自动保存为全局变量
+
 
 > {%
  client.log(JSON.stringify(response.body.content.token))
