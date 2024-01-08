@@ -4,11 +4,10 @@ import com.sp.traincommon.response.CommonResp;
 import com.sp.trainmember.req.MemberLoginReq;
 import com.sp.trainmember.req.MemberRegisterReq;
 import com.sp.trainmember.req.MemberSendCodeReq;
-import com.sp.trainmember.response.MemberLoginResp;
+import com.sp.traincommon.response.MemberLoginResp;
 import com.sp.trainmember.service.MemberService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 

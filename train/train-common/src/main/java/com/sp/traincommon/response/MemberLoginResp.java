@@ -1,4 +1,4 @@
-package com.sp.trainmember.response;
+package com.sp.traincommon.response;
 
 public class MemberLoginResp {
     private Long id;

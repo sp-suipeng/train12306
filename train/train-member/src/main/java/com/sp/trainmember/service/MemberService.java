@@ -1,10 +1,8 @@
 package com.sp.trainmember.service;
 
-import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.RandomUtil;
 
-import cn.hutool.jwt.JWTUtil;
 import com.sp.traincommon.exception.BusinessException;
 import com.sp.traincommon.exception.BusinessExceptionEnum;
 import com.sp.traincommon.util.JwtUtil;
@@ -15,14 +13,13 @@ import com.sp.trainmember.mapper.MemberMapper;
 import com.sp.trainmember.req.MemberLoginReq;
 import com.sp.trainmember.req.MemberRegisterReq;
 import com.sp.trainmember.req.MemberSendCodeReq;
-import com.sp.trainmember.response.MemberLoginResp;
+import com.sp.traincommon.response.MemberLoginResp;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Map;
 
 
 @Service

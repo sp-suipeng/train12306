@@ -1,16 +1,39 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import MainView from '../views/MainView.vue'
+// import MainView from '../views/MainView.vue'
 import store from "@/store";
 
 const routes = [
+  // {
+  //   path: '/',
+  //   name: 'home',
+  //   component: MainView,
+  //   meta: {
+  //     loginRequire: true  //必须登录
+  //   }
+  // },
   {
     path: '/',
-    name: 'home',
-    component: MainView,
+    component: () => import('../views/MainView.vue'),
     meta: {
-      loginRequire: true  //必须登录
+      loginRequire: true
+    },
+    children: [{
+      path: 'welcome',
+      component: () => import('../views/main/WelcomeView.vue'),
     }
-  },
+    // }, {
+    //   path: 'passenger',
+    //   component: () => import('../views/main/passenger.vue'),
+    // }, {
+    //   path: 'ticket',
+    //   component: () => import('../views/main/ticket.vue'),
+    // }, {
+    //   path: 'order',
+    //   component: () => import('../views/main/order.vue'),
+    // }]
+    ]
+  }
+    ,
   {
     path: '/login',
     name: 'login',
@@ -18,6 +41,10 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/LoginView.vue')
+  },
+  {
+    path:"",
+    redirect:'/welcome'
   }
 ]
 

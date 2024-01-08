@@ -1,0 +1,69 @@
+2024-01-07 14:19:14.820 INFO  com.sp.gateway.GatewayApplication                 :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-01-07 14:19:15.564 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=fdcd19d1-58db-3395-b4e7-6bec5dafd64e
+2024-01-07 14:19:17.290 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2024-01-07 14:19:17.291 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2024-01-07 14:19:17.291 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2024-01-07 14:19:17.292 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2024-01-07 14:19:17.292 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2024-01-07 14:19:17.292 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2024-01-07 14:19:17.293 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2024-01-07 14:19:17.293 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2024-01-07 14:19:17.293 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2024-01-07 14:19:17.293 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2024-01-07 14:19:17.293 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2024-01-07 14:19:17.294 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2024-01-07 14:19:17.294 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-01-07 14:19:19.204 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-01-07 14:19:21.309 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-01-07 14:20:01.227 INFO  com.sp.gateway.GatewayApplication                 :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2024-01-07 14:20:02.043 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m                  [0;39m BeanFactory id=fdcd19d1-58db-3395-b4e7-6bec5dafd64e
+2024-01-07 14:20:04.045 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2024-01-07 14:20:04.046 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2024-01-07 14:20:04.046 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2024-01-07 14:20:04.046 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2024-01-07 14:20:04.046 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2024-01-07 14:20:04.047 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2024-01-07 14:20:04.047 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2024-01-07 14:20:04.047 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2024-01-07 14:20:04.047 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2024-01-07 14:20:04.048 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2024-01-07 14:20:04.048 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2024-01-07 14:20:04.048 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2024-01-07 14:20:04.048 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :139  [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-01-07 14:20:06.110 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :89   [32m                  [0;39m Netty started on port(s): 8888
+2024-01-07 14:20:07.290 INFO  com.sp.gateway.GatewayApplication                 :61   [32m                  [0;39m Started GatewayApplication in 8.797 seconds (JVM running for 17.946)
+2024-01-07 14:22:08.223 INFO  com.sp.gateway.filter.LoginMemberFilter           :28   [32m                  [0;39m 不需要登录校验:/member/member/sendcode
+2024-01-07 14:22:08.228 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-07 14:22:46.291 INFO  com.sp.gateway.filter.LoginMemberFilter           :28   [32m                  [0;39m 不需要登录校验:/member/sendcode
+2024-01-07 14:22:46.292 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-07 14:23:55.771 INFO  com.sp.gateway.filter.LoginMemberFilter           :28   [32m                  [0;39m 不需要登录校验:/member/sendcode
+2024-01-07 14:23:55.776 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-07 14:25:57.210 INFO  com.sp.gateway.filter.LoginMemberFilter           :28   [32m                  [0;39m 不需要登录校验:/member/member/sendcode
+2024-01-07 14:25:57.212 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-07 14:26:30.223 INFO  com.sp.gateway.filter.LoginMemberFilter           :28   [32m                  [0;39m 不需要登录校验:/member/sendcode
+2024-01-07 14:26:30.224 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-07 14:30:15.702 INFO  com.sp.gateway.filter.LoginMemberFilter           :28   [32m                  [0;39m 不需要登录校验:/member/sendcode
+2024-01-07 14:30:15.704 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-07 14:31:42.390 INFO  com.sp.gateway.filter.LoginMemberFilter           :28   [32m                  [0;39m 不需要登录校验:/member/sendcode
+2024-01-07 14:31:42.392 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-07 14:33:47.846 INFO  com.sp.gateway.filter.LoginMemberFilter           :28   [32m                  [0;39m 不需要登录校验:/member/sendcode
+2024-01-07 14:33:47.848 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-07 14:39:59.069 INFO  com.sp.gateway.filter.LoginMemberFilter           :28   [32m                  [0;39m 不需要登录校验:/member/sendcode
+2024-01-07 14:39:59.070 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
+2024-01-07 14:40:04.178 INFO  com.sp.gateway.filter.LoginMemberFilter           :28   [32m                  [0;39m 不需要登录校验:/member/login
+2024-01-07 14:40:04.179 INFO  com.sp.gateway.filter.TestFilter                  :23   [32m                  [0;39m TestFilter
