@@ -1,3 +1,10 @@
+GET http://localhost:8888/member/passenger/save
+Accept: application/json
+token: {{token}}
+
+
+
+###
 POST http://localhost:8888/member/passenger/save
 Content-Type: application/json
 token:{{token}}

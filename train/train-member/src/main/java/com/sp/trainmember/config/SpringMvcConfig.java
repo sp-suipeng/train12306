@@ -15,7 +15,7 @@ public class SpringMvcConfig implements WebMvcConfigurer {
    @Autowired
    LogInterceptor logInterceptor;
 
-    @Autowired
+   @Autowired
    MemberInterceptor memberInterceptor;
 
    @Override

@@ -55,7 +55,7 @@ export default defineComponent({
     });
 
     const sendCode = () => {
-      axios.post("/member/sendcode", {
+      axios.post("/member/member/send-code", {
         mobile: loginForm.mobile
       }).then(response => {
         let data = response.data;
@@ -69,13 +69,12 @@ export default defineComponent({
     };
 
     const login = () => {
-      axios.post("/member/login", loginForm).then((response) => {
+      axios.post("/member/member/login", loginForm).then((response) => {
         let data = response.data;
         if (data.success) {
           notification.success({ description: '登录成功！' });
           // 登录成功，跳到控台主页
           router.push("/welcome");
-          console.log(data.content)
           store.commit("setMember", data.content);
         } else {
           notification.error({ description: data.message });

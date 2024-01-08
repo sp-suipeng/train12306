@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
+@RequestMapping("/member")
 public class MemberController {
     @Autowired
     private MemberService memberService;
@@ -41,7 +42,7 @@ public class MemberController {
      * @param mobileReq
      * @return
      */
-    @PostMapping("/sendcode")
+    @PostMapping("/send-code")
     public CommonResp<Long> sendCode(@Valid @RequestBody MemberSendCodeReq mobileReq) {
         memberService.sendCode(mobileReq);
         CommonResp<Long> commonResp = new CommonResp<>();
